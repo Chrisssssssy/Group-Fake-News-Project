@@ -66,7 +66,6 @@ print("Logistic Regression Accuracy (with extra reliable data):", logreg_accurac
 liar_data = pd.read_csv("liar_dataset/test.tsv", sep='\t', header=None)
 
 # Task 0: Grouping Labels
-# Assuming 'true' label as 1 and 'false' label as 0
 liar_data[1] = liar_data[1].map({'true': 1, 'mostly-true': 1, 'half-true': 1, 'barely-true': 0, 'false': 0, 'pants-fire': 0})
 
 # Task 1: Feature Extraction
